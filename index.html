@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for PingCue, an Android notification reminder app published by RADIVUM.">
+  <title>PingCue Privacy Policy | RADIVUM</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #171a2b;
+      --muted: #565b6c;
+      --line: #dfe2e9;
+      --paper: #ffffff;
+      --background: #f6f7fa;
+      --accent: #d9584d;
+      --teal: #19887c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.62;
+    }
+
+    main {
+      width: min(100% - 32px, 820px);
+      margin: 40px auto;
+      padding: 52px 58px 56px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 14px 40px rgba(23, 26, 43, 0.08);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--teal);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .mark {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px #fae8e5;
+    }
+
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(32px, 6vw, 46px);
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 34px 0;
+    }
+
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 22px;
+      letter-spacing: -0.015em;
+      line-height: 1.25;
+    }
+
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 24px; }
+    li { margin: 6px 0; }
+    a { color: #126b62; font-weight: 700; }
+    strong { color: var(--ink); }
+
+    .contact {
+      margin-top: 32px;
+      padding: 20px 22px;
+      background: #edf7f5;
+      border-left: 4px solid var(--teal);
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 38px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 620px) {
+      main {
+        width: 100%;
+        margin: 0;
+        padding: 34px 24px 40px;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    @page { size: A4; margin: 18mm 18mm 16mm; }
+
+    @media print {
+      body { background: #ffffff; }
+      main {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      h2, .contact { break-inside: avoid; }
+      h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand"><span class="mark" aria-hidden="true"></span> RADIVUM</div>
+    <h1>PingCue Privacy Policy</h1>
+    <p class="meta"><strong>Effective date:</strong> August 31, 2026<br><strong>Applies to:</strong> PingCue for Android, version 1.x</p>
+    <hr>
+
+    <p>PingCue creates local follow-up reminders for notifications the user identifies as important. Notification content can be sensitive, so PingCue is intentionally built without an account, advertising, analytics, or a cloud backend. This policy applies to PingCue and its publisher, RADIVUM.</p>
+
+    <h2>Notification access</h2>
+    <p>If you enable Android Notification Access for PingCue, Android allows the app to receive notifications posted on your device. PingCue uses that access only to:</p>
+    <ul>
+      <li>identify the source application;</li>
+      <li>read notification fields exposed by Android, such as title, message text, sender or conversation label where available, notification identifier, tag, key, and timestamp;</li>
+      <li>check whether you enabled monitoring for that source app;</li>
+      <li>evaluate your active on-device rules; and</li>
+      <li>store a matching item and schedule the reminders you configured.</li>
+    </ul>
+    <p>PingCue ignores notifications from apps you have not enabled for monitoring and ignores its own reminder notifications. You can disable Notification Access at any time in Android Settings. When access is disabled, PingCue cannot capture new source notifications; existing local items and settings remain until you delete them or retention removes them.</p>
+
+    <h2>Contact picker and conversations</h2>
+    <p>PingCue does not request broad Android Contacts permission. When you choose a phone contact for a WhatsApp rule, Android's system contact picker provides only the contact you select so PingCue can use its display name as a local rule filter. It does not read the device address book, phone numbers, email addresses, photos, notes, or account credentials.</p>
+    <p>WhatsApp does not expose its private contacts or groups database to other apps. Conversation or group display names are learned only from notifications for apps you explicitly enable for monitoring, or entered manually by you. Contact and conversation names are never transmitted off the device.</p>
+
+    <h2>Data processed and local storage</h2>
+    <p>PingCue processes and may store the following in the app's private Android storage:</p>
+    <ul>
+      <li>monitored app package names and display names;</li>
+      <li>rule names, keywords, exclusion keywords, priority, timing, and repeat settings;</li>
+      <li>selected contact or group display names and locally detected WhatsApp conversation names;</li>
+      <li>matched notification title, message, sender where exposed, source app, notification identifiers, timestamps, matched rule or keyword, status, and reminder activity; and</li>
+      <li>preferences such as theme, default reminder and snooze settings, quiet hours, and history retention.</li>
+    </ul>
+    <p>This data is not transmitted to RADIVUM or a third-party server. The Android manifest does not request Internet access. PingCue does not include analytics, advertising, crash-reporting, authentication, or cloud SDKs.</p>
+
+    <h2>Data sharing and sale</h2>
+    <p>PingCue does not sell notification data or share it with third parties. Selecting <strong>Open</strong> asks Android to launch the source app already installed on your device; PingCue does not send stored notification content to that app.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>The default notification-history retention is 30 days. You may choose 7 days, 30 days, 90 days, or forever. Retention cleanup deletes completed or ignored history items only; an active reminder remains until you snooze, cancel, or disable monitoring.</p>
+    <p>Settings provides two deletion controls:</p>
+    <ul>
+      <li><strong>Delete notification history</strong> removes captured notification content, reminder schedules, and reminder activity while leaving rules and monitored-app choices.</li>
+      <li><strong>Delete all local data</strong> removes rules, monitored apps, captured notification content, schedules, activity, and preferences and returns PingCue to first-run state.</li>
+    </ul>
+    <p>Uninstalling PingCue also causes Android to remove its private application data. PingCue disables cloud backup and excludes its database and preferences from device transfer.</p>
+
+    <h2>Permissions and special access</h2>
+    <ul>
+      <li><strong>Notification Access</strong> is special Android access used for the core monitoring and matching function described above.</li>
+      <li><strong>Post notifications</strong> allows PingCue to show follow-up reminders on Android 13 and later.</li>
+      <li><strong>Android's contact picker</strong> is optional and supplies only a display name you explicitly select for a contact-specific WhatsApp rule; PingCue does not request broad Contacts permission.</li>
+      <li><strong>Modify audio settings</strong> lets PingCue temporarily raise the alarm audio stream while a reminder ringtone is playing. If the user has not changed it during the alarm, PingCue restores the previous alarm volume when playback ends; it does not change the phone's ringer mode.</li>
+      <li><strong>Foreground service and wake lock</strong> keep user-enabled background monitoring and an active reminder reliable. A silent ongoing monitoring notification is shown while monitoring is enabled.</li>
+      <li><strong>Receive boot completed</strong> allows persisted pending reminder work to be restored after reboot.</li>
+      <li><strong>Vibrate</strong> allows reminder channels to use user-controlled vibration behavior.</li>
+    </ul>
+    <p>PingCue does not request location, camera, microphone, SMS, call logs, broad file access, accessibility, or exact-alarm permission.</p>
+
+    <h2>Security</h2>
+    <p>Data is stored in Android app-private storage and is protected by Android's application sandbox and device security controls. Reminder notifications use private lock-screen visibility and a generic public version. PingCue does not claim that local data is separately end-to-end encrypted. Users should protect their device with a secure screen lock and use Android's notification privacy controls.</p>
+
+    <h2>Children</h2>
+    <p>PingCue is a general productivity utility and is not directed to children. It does not knowingly collect or transmit personal data to the publisher.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If the implementation, permissions, dependencies, or data practices change, RADIVUM will update this policy and its effective date before distributing the affected release. Material new uses of sensitive data require an updated in-app disclosure and user consent where applicable.</p>
+
+    <section class="contact" aria-label="Privacy contact">
+      <strong>Privacy contact</strong><br>
+      Questions or privacy requests may be sent to <a href="mailto:ubikhan0897@gmail.com">ubikhan0897@gmail.com</a>. Because version 1 stores data only on the user's device, RADIVUM cannot remotely retrieve or delete local records; users control deletion in the app or through uninstalling it.
+    </section>
+
+    <footer>Copyright 2026 RADIVUM. This page is the public privacy policy for PingCue.</footer>
+  </main>
+</body>
+</html>
