@@ -135,7 +135,7 @@
   <main>
     <div class="brand"><span class="mark" aria-hidden="true"></span> RADIVUM</div>
     <h1>PingCue Privacy Policy</h1>
-    <p class="meta"><strong>Effective date:</strong> August 31, 2026<br><strong>Applies to:</strong> PingCue for Android, version 1.x</p>
+    <p class="meta"><strong>Effective date:</strong> October 9, 2026<br><strong>Applies to:</strong> PingCue for Android, version 1.x</p>
     <hr>
 
     <p>PingCue creates local follow-up reminders for notifications the user identifies as important. Notification content can be sensitive, so PingCue is intentionally built without an account, advertising, analytics, or a cloud backend. This policy applies to PingCue and its publisher, RADIVUM.</p>
@@ -149,7 +149,12 @@
       <li>evaluate your active on-device rules; and</li>
       <li>store a matching item and schedule the reminders you configured.</li>
     </ul>
-    <p>PingCue ignores notifications from apps you have not enabled for monitoring and ignores its own reminder notifications. You can disable Notification Access at any time in Android Settings. When access is disabled, PingCue cannot capture new source notifications; existing local items and settings remain until you delete them or retention removes them.</p>
+    <p>Before reading notification content, PingCue checks the source app locally. If you have not enabled that app for monitoring, PingCue ignores the notification without opening its title, message text, sender, or other notification fields. PingCue also ignores its own reminder notifications. You can disable Notification Access at any time in Android Settings. When access is disabled, PingCue cannot capture new source notifications; existing local items and settings remain until you delete them or retention removes them.</p>
+
+    <p>PingCue requires your affirmative agreement to its current in-app disclosure before monitoring selected-app notifications in the background, including while the app is closed or the screen is locked. Agreement is saved locally. Android access alone does not enable monitoring; changed disclosures require agreement again. Stop monitoring in Settings or with the monitoring notification's Stop action. Android security lockdown deletes all captured notification history, schedules and reminder activity, plus automatically learned conversation names. Manually configured rules and selected apps remain.</p>
+
+    <h2>Installed-app picker</h2>
+    <p>When you open PingCue's app picker, it reads the local package names, display names, and icons of launchable apps so you can choose which sources to monitor. This list is used only to show the picker on your device. It is not transmitted, shared, used for advertising, or stored except for the apps you explicitly select to monitor.</p>
 
     <h2>Contact picker and conversations</h2>
     <p>PingCue does not request broad Android Contacts permission. When you choose a phone contact for a WhatsApp rule, Android's system contact picker provides only the contact you select so PingCue can use its display name as a local rule filter. It does not read the device address book, phone numbers, email addresses, photos, notes, or account credentials.</p>
@@ -158,7 +163,7 @@
     <h2>Data processed and local storage</h2>
     <p>PingCue processes and may store the following in the app's private Android storage:</p>
     <ul>
-      <li>monitored app package names and display names;</li>
+      <li>package names and display names of apps you explicitly monitor; the broader launchable-app list is only queried while the picker is open and is not stored;</li>
       <li>rule names, keywords, exclusion keywords, priority, timing, and repeat settings;</li>
       <li>selected contact or group display names and locally detected WhatsApp conversation names;</li>
       <li>matched notification title, message, sender where exposed, source app, notification identifiers, timestamps, matched rule or keyword, status, and reminder activity; and</li>
@@ -170,7 +175,7 @@
     <p>PingCue does not sell notification data or share it with third parties. Selecting <strong>Open</strong> asks Android to launch the source app already installed on your device; PingCue does not send stored notification content to that app.</p>
 
     <h2>Retention and deletion</h2>
-    <p>The default notification-history retention is 30 days. You may choose 7 days, 30 days, 90 days, or forever. Retention cleanup deletes completed or ignored history items only; an active reminder remains until you snooze, cancel, or disable monitoring.</p>
+    <p>The default notification-history retention is 30 days. You may choose 7 days, 30 days, 90 days, or forever. Retention cleanup deletes completed or ignored history items only; an active reminder remains until you cancel or disable monitoring. Snoozing postpones a reminder and retains its captured content.</p>
     <p>Settings provides two deletion controls:</p>
     <ul>
       <li><strong>Delete notification history</strong> removes captured notification content, reminder schedules, and reminder activity while leaving rules and monitored-app choices.</li>
